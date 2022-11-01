@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import '../widgets/side_bar.dart';
 
 class ActivitiesScreen extends StatelessWidget {
+  static const String routeName = '/activities';
   const ActivitiesScreen({Key? key}) : super(key: key);
 
   @override
@@ -15,14 +16,9 @@ class ActivitiesScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5EDDC),
-      body: Row(
-        children: [
-          SideBar(
-            height: height,
-            width: width,
-          ),
-        ],
-      ),
+      body: SingleChildScrollView(
+        
+      )
     );
   }
 }

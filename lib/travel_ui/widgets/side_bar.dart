@@ -4,13 +4,13 @@ import 'package:flutter/src/widgets/framework.dart';
 class SideBar extends StatefulWidget {
   final double height;
   final double width;
-  // final GlobalKey<NavigatorState> navigator;
+  final GlobalKey<NavigatorState> navigator;
 
   SideBar({
     Key? key,
     required this.height,
     required this.width,
-    // required this.navigator
+    required this.navigator
   }) : super(key: key);
 
   @override
