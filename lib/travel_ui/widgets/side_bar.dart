@@ -37,7 +37,7 @@ class _SideBarState extends State<SideBar> {
           SizedBox(
             height: widget.height * 0.05,
           ),
-          ListView.builder(
+          ListView.builder  (
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return RotatedBox(
@@ -47,6 +47,7 @@ class _SideBarState extends State<SideBar> {
                     setState(() {
                       sideBarIndex = index;
                     });
+                    widget.navigator.currentState!.pushNamed(menu[index]['routeName']);
                   },
                   child: Text(
                     menu[index]['title'],

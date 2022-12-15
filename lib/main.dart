@@ -19,8 +19,8 @@ class Travel extends StatelessWidget {
       ),
       initialRoute: '/activities',
       routes: {
-        ActivitiesScreen.routeName: (context) => ActivitiesScreen(),
-        HotelsScreen.routeName: (context) => HotelsScreen(),
+        ActivitiesScreen.routeName: (context) => const ActivitiesScreen(),
+        HotelsScreen.routeName: (context) => const HotelsScreen(),
       },
       builder: (context, child) {
         return TravelApp(

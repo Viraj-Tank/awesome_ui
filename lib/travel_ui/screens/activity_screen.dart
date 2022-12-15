@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../widgets/CustomHeader.dart';
 import '../widgets/side_bar.dart';
 
 class ActivitiesScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class ActivitiesScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF5EDDC),
       body: SingleChildScrollView(
-        
+        child: CustomHeader(title:'Activities'),
       )
     );
   }
